@@ -8,5 +8,8 @@ import { Component } from "@angular/core";
 })
 
 export class Producto{
-
+    constructor(){
+        console.log('Componente Producto Cargado');
+        alert('Hola');
+    }
 }

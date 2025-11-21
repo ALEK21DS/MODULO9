@@ -1,12 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Perfil } from "./perfil/perfil";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Perfil],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Bienvenido, este es mi nuevo proyecto de practica');
+  protected readonly title = signal('Primer Proyecto Angular');
 }

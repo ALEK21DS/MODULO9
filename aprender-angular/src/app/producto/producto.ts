@@ -25,4 +25,8 @@ export class Producto{
         this.descripcion = 'Este es un producto de alta calidad.';
         console.log('Componente Producto Cargado');
     }
+
+    ngOnInit(){
+        console.log("El componente esta inicializado");
+    }
 }

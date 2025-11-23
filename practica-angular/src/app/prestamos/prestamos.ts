@@ -7,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrl: './prestamos.css',
 })
 export class Prestamos {
+  web = 'https://angular.dev';
+  redirigir = true;
+
+  cambioRedireccion(){
+    if(this.redirigir == false){
+      this.redirigir = true;
+    } else {
+      this.redirigir = false;
+    }
+  }
 
 }

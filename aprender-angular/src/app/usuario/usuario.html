@@ -16,3 +16,14 @@ target="_blank">Visitar sitio web</a>
 }
 
 <button (click)="cambioRedireccion()" >Modificar enlace</button>
+
+
+<h3>Marcas Autos</h3>
+
+<ul>
+    @for(marca of marcasAutos; track marca.id; let indice = $index, contador = $count, par = $even, impar = $odd){
+        <li> {{indice+1}} - {{marca.nombre}} </li>
+    } @empty {
+        <p>El listado esta vacio</p>
+    }
+</ul>

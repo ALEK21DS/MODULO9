@@ -29,4 +29,12 @@ export class Producto{
     ngOnInit(){
         console.log("El componente esta inicializado");
     }
+
+    ngDoCheck(){
+        console.log("Componente actualizado");
+    }
+
+    CambiarNombre(){
+        this.nombre = 'PC SOBREMESA';
+    }
 }

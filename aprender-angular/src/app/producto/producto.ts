@@ -30,6 +30,10 @@ export class Producto{
         console.log("El componente esta inicializado");
     }
 
+    ngAfterViewInit(){
+        console.log("La vista esta cargada");
+    }
+
     ngDoCheck(){
         console.log("Componente actualizado");
     }

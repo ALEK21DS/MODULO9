@@ -26,3 +26,19 @@ target="_blank">Visitar sitio web
         <p>No hay prestamos disponibles</p>
     }
 </ul>
+
+@switch (prestamo.tipo) {
+    @case('personal'){
+        <p>El prestamo es de tipo personal con un interes de {{prestamo.interes}}% </p>
+    }
+    @case('hipotecario'){
+        <p>El prestamo es de tipo hipotecario con un interes de {{prestamo.interes}}% </p>
+        <app-transacciones></app-transacciones>
+    }
+    @case('vehicular'){
+        <p>El prestamo es de tipo vehicular con un interes de {{prestamo.interes}}% </p>
+    }
+    @default {
+        <p>Tipo de prestamo no reconocido.</p>
+    }
+}

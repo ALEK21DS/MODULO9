@@ -1,7 +1,11 @@
 import { Component } from "@angular/core";
+import { Cuenta } from "../cuenta/cuenta";
+import { Prestamos } from "../prestamos/prestamos";
+import { Transacciones } from "../transacciones/transacciones";
 
 @Component({
     selector: 'mi-perfil',
+    imports: [Cuenta, Prestamos, Transacciones],
     templateUrl: 'perfil.html',
     styleUrl: 'perfil.css',
 
@@ -23,7 +27,6 @@ export class Perfil{
         this.direccion = 'Calle Amarunan, Quito, Ecuador';
         this.telefono = '0968174829';
 
-        alert('¡Bienvenido al perfil, estás dentro de la aplicación!');
         console.log('Se cargó el componente de perfil correctamente.');
     }
 }

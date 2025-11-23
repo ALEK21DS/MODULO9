@@ -1,12 +1,10 @@
 import { Component } from "@angular/core";
 import { Pelicula } from "../pelicula/pelicula";
-import { Usuario } from "../usuario/usuario";
-import { Ventas } from "../ventas/ventas";
 
 
 @Component({
     selector: 'mi-producto',
-    imports: [Pelicula, Usuario, Ventas],
+    imports: [Pelicula],
     templateUrl: 'producto.html',
     styleUrl: 'producto.css'
 })
@@ -17,6 +15,8 @@ export class Producto{
     public marca: string;
     public precio: number;
     public descripcion: string;
+
+    public mostrarPeliculas: boolean = true;
 
     constructor(){
         this.nombre = 'PC PORTATIL';
@@ -38,7 +38,11 @@ export class Producto{
         console.log("Componente actualizado");
     }
 
-    CambiarNombre(){
+    cambiarNombre(){
         this.nombre = 'PC SOBREMESA';
+    }
+
+    ocultarPeliculas(valor: boolean){
+        this.mostrarPeliculas = valor;
     }
 }

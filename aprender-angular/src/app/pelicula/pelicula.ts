@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './pelicula.css',
 })
 export class Pelicula {
-
+  ngOnInit(){
+    console.log('El componente de Pelicula esta arrancando');
+  }
+  ngOnDestroy(){
+    console.log('El componente de Pelicula ha sido elimando');
+  }
 }

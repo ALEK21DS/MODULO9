@@ -3,8 +3,18 @@
 <p>De marca {{marca}} </p>
 <strong> {{precio}}$ </strong>
 
-<button (click)="CambiarNombre()">Cambiar nombre del producto</button>
+<br>
+<br>
+<button (click)="cambiarNombre()">Cambiar nombre del producto</button>
+<br>
+<br>
 
-<app-pelicula></app-pelicula>
-<app-usuario></app-usuario>
-<app-ventas></app-ventas>
+@if(mostrarPeliculas==true){
+    <button (click)="ocultarPeliculas(false)">Ocultar componente de peliculas</button>
+} @else {
+    <button (click)="ocultarPeliculas(true)">Mostrar componente de peliculas</button>
+}
+
+@if(mostrarPeliculas==true){
+    <app-pelicula></app-pelicula>
+}

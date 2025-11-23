@@ -29,4 +29,15 @@ export class Perfil{
 
         console.log('Se cargó el componente de perfil correctamente.');
     }
+
+    ngDoCheck(){
+        console.log('Se han detectado cambios en el perfil.');
+    }
+
+    cambiarEdad(){
+        this.edad = 24;
+    }
+    cambiarDireccion(){
+        this.direccion = 'Calle Nueva, Quito, Ecuador';
+    }
 }

@@ -16,3 +16,13 @@ target="_blank">Visitar sitio web
 }
 
 <button (click)="cambioRedireccion()" >Modificar enlace</button>
+
+<h3>Prestamos</h3>
+
+<ul>
+    @for(prestamo of prestamosList; track prestamo.id; let indice = $index;){
+        <li [classList]="prestamo.estado"> {{indice+1}} - {{prestamo.monto}}$ - {{prestamo.estado}} </li>
+    } @empty {
+        <p>No hay prestamos disponibles</p>
+    }
+</ul>

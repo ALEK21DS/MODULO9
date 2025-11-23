@@ -14,3 +14,11 @@ a{
     font-weight: bold;
     border-radius: 15px;
 }
+.Aprobado{
+    color: green;
+    font-weight: bold;
+}
+.Pendiente{
+    color: red;
+    font-weight: bold;
+}

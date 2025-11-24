@@ -44,3 +44,23 @@ target="_blank">Visitar sitio web</a>
         <p>Eres un invitado</p>
     }
 }
+
+<h3>Mas cosas de las plantillas de Angular</h3>
+
+<ng-container>
+    <h4>Esto esta en un contenedor de Angular</h4>
+</ng-container>
+
+@let pais = 'Ecuador';
+
+
+@let saludo = 'Saludos desde ' + pais;
+
+{{saludo}}
+
+
+@defer{
+    <mi-producto></mi-producto>
+} @placeholder {
+    <p>Se esta cargando el componente de producto</p>
+}

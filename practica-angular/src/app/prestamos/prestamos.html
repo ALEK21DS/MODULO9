@@ -42,3 +42,11 @@ target="_blank">Visitar sitio web
         <p>Tipo de prestamo no reconocido.</p>
     }
 }
+
+
+<h3>Practica con Pipes</h3>
+
+<p>Tipo de prestamo: {{prestamo.tipo| titlecase}}</p>
+<p>Monto: {{prestamo.monto | currency}}</p>
+<p>Interes: {{prestamo.interes| percent}} </p>
+<p>Fecha: {{prestamo.fechaPago |date}} </p>

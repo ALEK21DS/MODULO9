@@ -3,10 +3,11 @@ import { UpperCasePipe, LowerCasePipe, DatePipe, TitleCasePipe } from '@angular/
 
 import { Ventas } from '../ventas/ventas';
 import { Producto } from '../producto/producto';
+import { CambiaLetrasPipe } from '../pipes/cambiaLetras';
 
 @Component({
   selector: 'app-usuario',
-  imports: [Ventas, Producto, UpperCasePipe, LowerCasePipe, DatePipe, TitleCasePipe],
+  imports: [Ventas, Producto, UpperCasePipe, LowerCasePipe, DatePipe, TitleCasePipe, CambiaLetrasPipe],
   templateUrl: './usuario.html',
   styleUrl: './usuario.css',
 })

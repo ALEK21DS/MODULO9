@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import { Transacciones } from '../transacciones/transacciones';
 import { UpperCasePipe, LowerCasePipe, DatePipe, TitleCasePipe, CurrencyPipe, PercentPipe } from '@angular/common';
+import { CambiarCodigoPipe } from '../pipes/codigoAscii';
+
 
 @Component({
   selector: 'app-prestamos',
-  imports: [Transacciones, UpperCasePipe, LowerCasePipe, DatePipe, TitleCasePipe, CurrencyPipe, PercentPipe],
+  standalone: true,
+  imports: [Transacciones, UpperCasePipe, LowerCasePipe, DatePipe, TitleCasePipe, CurrencyPipe, PercentPipe, CambiarCodigoPipe],
   templateUrl: './prestamos.html',
-  styleUrl: './prestamos.css',
+  styleUrls: ['./prestamos.css'],
 })
 export class Prestamos {
   web = 'https://angular.dev';
@@ -26,6 +29,8 @@ export class Prestamos {
     interes: 0.05,
     fechaPago: '2025-12-31',
   }
+
+  frase = 'Angular es un framework de desarrollo para crear aplicaciones web.';
 
   cambioRedireccion(){
     if(this.redirigir == false){

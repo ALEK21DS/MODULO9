@@ -7,7 +7,7 @@ import { CambiaLetrasPipe } from '../pipes/cambiaLetras';
 
 @Component({
   selector: 'app-usuario',
-  imports: [Ventas, Producto, UpperCasePipe, LowerCasePipe, DatePipe, TitleCasePipe, CambiaLetrasPipe],
+  imports: [Ventas, DatePipe, TitleCasePipe, CambiaLetrasPipe],
   templateUrl: './usuario.html',
   styleUrl: './usuario.css',
 })

@@ -28,6 +28,8 @@ export class Usuario {
 		rol: 'admin'
 	};
 
+  fecha = new Date(2030, 12, 25);
+
   /*ngOnInit() {
     this.marcasAutos = [];
   }; Para poner la lista vacia*/

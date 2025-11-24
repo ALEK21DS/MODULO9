@@ -1,0 +1,13 @@
+.pintar{
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    padding: 20px;
+}
+.ver{
+    background-color: gray;
+    color: black;
+    font-weight: normal;
+    padding: 10px;
+}

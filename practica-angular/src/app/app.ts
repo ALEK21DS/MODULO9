@@ -1,11 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-//import { Perfil } from "./perfil/perfil";
-import { Prestamos } from './prestamos/prestamos';
+//import { Perfil } from "./perfil/perfil"; Componentes
+//import { Prestamos } from './prestamos/prestamos';  Plantillas
+import { Transacciones } from './transacciones/transacciones';  //Directivas
 
 @Component({
   selector: 'app-root',
-  imports: [Prestamos],
+  imports: [Transacciones],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

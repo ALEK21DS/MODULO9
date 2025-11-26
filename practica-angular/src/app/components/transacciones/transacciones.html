@@ -15,3 +15,15 @@
         <li [ngStyle]="transaccion.tipo == 'ingreso' ? {'color': 'green'} : {'color': 'red'}" > {{transaccion.fecha | date: 'yyyy/MM/dd'}}: {{transaccion.descripcion}} - {{transaccion.monto}}$ </li>
     }
 </ol>
+
+
+<h2>Practica de formulario y two way data binding</h2>
+
+
+<input type="text" [(ngModel)] = 'descripcionTransaccion'>
+
+<button (click)="mostrarTransaccion()">Mostrar transaccion</button>
+
+<br>
+
+<p>Mi transaccion es: {{descripcionTransaccion}} </p>

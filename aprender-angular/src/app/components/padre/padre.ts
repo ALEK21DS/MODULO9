@@ -8,4 +8,10 @@ import { Hijo } from '../hijo/hijo';
 })
 export class Padre {
   nombrePadre: string = 'Componente Padre';
+
+  saludoRecibido: string = '';
+
+  recibirSaludo(saludo: string){
+    this.saludoRecibido = saludo;
+  }
 }

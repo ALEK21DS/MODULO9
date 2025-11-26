@@ -5,4 +5,8 @@
 
 <p>Te presento a mi hijo</p>
 
-<app-hijo [elNombreDeMiPadre] = "nombrePadre" ></app-hijo>
+{{saludoRecibido}}
+
+<app-hijo [elNombreDeMiPadre] = "nombrePadre" 
+            (saludoHijo)="recibirSaludo($event)"
+></app-hijo>

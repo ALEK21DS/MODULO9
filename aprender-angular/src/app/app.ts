@@ -4,10 +4,12 @@ import { Ventas } from './components/ventas/ventas'; //Directivas
 //import { Producto } from "./producto/producto"; Constantes
 //import { Usuario } from './usuario/usuario';  Plantillas
 import { config } from './models/config'; //Modelos
+import { Cine } from './components/cine/cine';
+
 
 @Component({
   selector: 'app-root',
-  imports: [Ventas],
+  imports: [Cine],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

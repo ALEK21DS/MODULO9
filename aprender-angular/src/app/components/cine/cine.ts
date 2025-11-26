@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Pelicula } from '../../models/pelicula';
 import { FormsModule } from '@angular/forms';
+//import { NgClass } from "../../../../node_modules/@angular/common/types/_common_module-chunk";
 
 @Component({
   selector: 'app-cine',
@@ -16,6 +17,8 @@ export class Cine {
 
   //Para trabajo con formularios binding bidireccional
   public mi_pelicula: string = '';
+
+  public peliculasSinDatos: string[] = [];
 
   constructor(){
     this.titulo = "Modelos";
@@ -41,5 +44,14 @@ export class Cine {
 
   ngDoCheck(){
     console.log(this.mi_pelicula)
+  }
+
+  showPelicula(){
+    alert(this.mi_pelicula);
+  }
+
+  addPelicula(){
+    this.peliculasSinDatos.push(this.mi_pelicula)
+
   }
 }

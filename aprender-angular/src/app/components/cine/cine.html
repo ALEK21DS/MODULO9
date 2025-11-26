@@ -12,7 +12,20 @@
 
 <input type="text" [(ngModel)] = "mi_pelicula">
 
+<button (click)="showPelicula()">Mostrar pelicula</button>
+
+<button (click)="addPelicula()">Añadir nueva pelicula</button>
+
 <p>
 Mi pelicula es : 
 <strong>{{mi_pelicula}}</strong>
 </p>
+
+<h2>Listado de peliculas simples</h2>
+
+<ul>
+    @for (pelicula of peliculasSinDatos; track pelicula) {
+        <li> {{pelicula}} </li>
+    }
+</ul>
+

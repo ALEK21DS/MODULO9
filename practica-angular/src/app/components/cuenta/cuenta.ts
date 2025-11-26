@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Cliente } from '../../models/cliente';
 
 @Component({
   selector: 'app-cuenta',
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
   styleUrl: './cuenta.css',
 })
 export class Cuenta {
+
+  c1: Cliente | undefined;
+
+  constructor() {
+    this.c1 = new Cliente(1, 'Brandon', 'Gonzalez', 'brandon@gmail.com', 5000);
+  }
+
+
   ngOnInit(){
     console.log('El componente de Cuenta esta arrancando');
   }

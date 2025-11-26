@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Transacciones } from '../transacciones/transacciones';
 import { UpperCasePipe, LowerCasePipe, DatePipe, TitleCasePipe, CurrencyPipe, PercentPipe } from '@angular/common';
-import { CambiarCodigoPipe } from '../pipes/codigoAscii';
+import { CambiarCodigoPipe } from '../../pipes/codigoAscii';
 
 
 @Component({

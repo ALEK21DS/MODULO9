@@ -1,0 +1,17 @@
+<!--<h1>Practica Directivas</h1>
+
+<p [ngClass]="mostrar ? 'pintar': 'ver'">Me gusta la programacion</p>
+
+
+<p [ngStyle]="mostrar ? {'background-color': 'red'}:{'background-color':'gray'}">NgStyle con validacion</p>
+
+<p [ngStyle]="newStyles">NgStyle con objeto estilos</p>-->
+
+
+<h2>Lista de transacciones</h2>
+
+<ol>
+    @for (transaccion of transacciones; track transaccion.id) {
+        <li [ngStyle]="transaccion.tipo == 'ingreso' ? {'color': 'green'} : {'color': 'red'}" > {{transaccion.fecha | date: 'yyyy/MM/dd'}}: {{transaccion.descripcion}} - {{transaccion.monto}}$ </li>
+    }
+</ol>

@@ -1,12 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Cuenta } from './components/cuenta/cuenta';
+import { Transacciones } from './components/transacciones/transacciones'; //Directivas
 //import { Perfil } from "./perfil/perfil"; Componentes
 //import { Prestamos } from './prestamos/prestamos';  Plantillas
-import { Transacciones } from './transacciones/transacciones';  //Directivas
 
 @Component({
   selector: 'app-root',
-  imports: [Transacciones],
+  imports: [Cuenta, Transacciones],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

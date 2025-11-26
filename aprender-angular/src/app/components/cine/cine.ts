@@ -60,4 +60,7 @@ export class Cine {
     console.log(nuevaPelicula);
     this.peliculas.push(nuevaPelicula);
   }
+  deletePelicula(indice: number){
+    this.peliculas.splice(indice, 1);
+  }
 }

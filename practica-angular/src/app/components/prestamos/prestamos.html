@@ -18,10 +18,17 @@ target="_blank">Visitar sitio web
 <button (click)="cambioRedireccion()" >Modificar enlace</button>
 
 <h3>Prestamos</h3>
+Estado:
+<input type="text" [(ngModel)] = "newTransaccion">
+<br>
+Monto:
+<input type="text" [(ngModel)] = "newMonto">
+<br>
+<button (click)="addPrestamo()">Agregar Nuevo Prestamo</button>
 
 <ul>
     @for(prestamo of prestamosList; track prestamo.id; let indice = $index;){
-        <li [class]="prestamo.estado"> {{indice+1}} - {{prestamo.monto}}$ - {{prestamo.estado}} </li>
+        <li [class]="prestamo.estado"> {{indice+1}} - {{prestamo.monto}}$ - {{prestamo.estado}} - <button (click)="deletePrestamo(indice)">Eliminar</button> </li>
     } @empty {
         <p>No hay prestamos disponibles</p>
     }

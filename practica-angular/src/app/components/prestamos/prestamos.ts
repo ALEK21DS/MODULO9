@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { Transacciones } from '../transacciones/transacciones';
 import { UpperCasePipe, LowerCasePipe, DatePipe, TitleCasePipe, CurrencyPipe, PercentPipe } from '@angular/common';
 import { CambiarCodigoPipe } from '../../pipes/codigoAscii';
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
   selector: 'app-prestamos',
   standalone: true,
-  imports: [Transacciones, DatePipe, TitleCasePipe, CurrencyPipe, PercentPipe, CambiarCodigoPipe],
+  imports: [Transacciones, DatePipe, TitleCasePipe, CurrencyPipe, PercentPipe, CambiarCodigoPipe, FormsModule],
   templateUrl: './prestamos.html',
   styleUrls: ['./prestamos.css'],
 })
@@ -32,11 +33,25 @@ export class Prestamos {
 
   frase = 'Angular es un framework de desarrollo para crear aplicaciones web.';
 
+  public newTransaccion: string = '';
+  public newMonto: number = 0;
+
   cambioRedireccion(){
     if(this.redirigir == false){
       this.redirigir = true;
     } else {
       this.redirigir = false;
     }
+  }
+
+  addPrestamo(){
+    let identificador = this.prestamosList[this.prestamosList.length-1].id + 1;
+    let nuevoPrestamo = {id: identificador,estado: this.newTransaccion, monto: this.newMonto}
+
+    this.prestamosList.push(nuevoPrestamo);
+  }
+
+  deletePrestamo(indice: number){
+    this.prestamosList.splice(indice, 1);
   }
 }

@@ -9,10 +9,10 @@ import { Cliente } from '../../models/cliente';
 })
 export class Cuenta {
 
-  c1: Cliente | undefined;
+  public c1 = new Cliente(1, 'Brandon', 'Gonzalez', 'brandon@gmail.com', 5000);
 
   constructor() {
-    this.c1 = new Cliente(1, 'Brandon', 'Gonzalez', 'brandon@gmail.com', 5000);
+    this.c1;
   }
 
 

@@ -1,4 +1,4 @@
-<h1>Practica de Componentes</h1>
+<!-- <h1>Practica de Componentes</h1>
 
 <h2>Mi perfil:</h2>
 <em> {{nombre}} </em>
@@ -26,4 +26,12 @@
  
 @if(mostrarCuenta==true){
   <app-cuenta></app-cuenta>
-}
+} -->
+
+
+<app-cuenta [nombreCliente] = "nombreCliente"></app-cuenta>
+
+<app-transacciones 
+            (mensajeEnviado)="recibirMensaje($event)"></app-transacciones>
+
+            {{mensajeRecibido}}

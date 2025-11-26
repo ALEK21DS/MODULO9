@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Cliente } from '../../models/cliente';
 
 @Component({
@@ -22,5 +22,7 @@ export class Cuenta {
   ngOnDestroy(){
     console.log('El componente de Cuenta ha sido elimando');
   }
+
+  @Input() nombreCliente: string = '';
 
 }

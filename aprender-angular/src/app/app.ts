@@ -1,8 +1,8 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Ventas } from './components/ventas/ventas'; //Directivas
 //import { Producto } from "./producto/producto"; Constantes
 //import { Usuario } from './usuario/usuario';  Plantillas
-import { Ventas } from './ventas/ventas'; //Directivas
 
 @Component({
   selector: 'app-root',

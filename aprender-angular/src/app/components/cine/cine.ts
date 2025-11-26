@@ -45,9 +45,9 @@ export class Cine {
     this.peliculas[1].titulo = "SHREK"
   }
 
-  ngDoCheck(){
+  /*ngDoCheck(){
     console.log(this.mi_pelicula)
-  }
+  }*/
 
   showPelicula(){
     alert(this.mi_pelicula);
@@ -62,5 +62,14 @@ export class Cine {
   }
   deletePelicula(indice: number){
     this.peliculas.splice(indice, 1);
+  }
+  haciendoFoco(){ //Ver cuando entra al input
+    console.warn('Estas DENTRO del input de pelicula !!');
+  }
+  saliendoDelFoco(){ //Ver cuando sale al input
+    console.warn('Estas FUERA del input de pelicula !!');
+  }
+  pulsandoTeclas(event: KeyboardEvent){ //Ver la letra que ingresa en el input
+    console.info('Estas PULSANDO una tecla: ' + event.key);
   }
 }

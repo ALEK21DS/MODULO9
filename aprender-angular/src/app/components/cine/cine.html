@@ -19,7 +19,11 @@
 
 <h1>Formulario y two way data binding</h1>
 
-<input type="text" [(ngModel)] = "mi_pelicula">
+<input type="text" [(ngModel)] = "mi_pelicula"
+                    (focus)="haciendoFoco()"
+                    (blur)="saliendoDelFoco()"
+                    (keyup)="pulsandoTeclas($event)"
+>
 
 <button (click)="showPelicula()">Mostrar pelicula</button>
 

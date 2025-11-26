@@ -5,11 +5,12 @@ import { Ventas } from './components/ventas/ventas'; //Directivas
 //import { Usuario } from './usuario/usuario';  Plantillas
 import { config } from './models/config'; //Modelos
 import { Cine } from './components/cine/cine';
+import { Padre } from './components/padre/padre';
 
 
 @Component({
   selector: 'app-root',
-  imports: [Cine],
+  imports: [Cine, Padre],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

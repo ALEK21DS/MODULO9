@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLinkWithHref, RouterLink, RouterLinkActive } from '@angular/router';
 import { Cuenta } from './components/cuenta/cuenta';
 import { Transacciones } from './components/transacciones/transacciones'; //Directivas
 import { Prestamos } from './components/prestamos/prestamos';
@@ -9,7 +9,7 @@ import { Perfil } from './components/perfil/perfil';
 
 @Component({
   selector: 'app-root',
-  imports: [Cuenta, Transacciones, Prestamos, Perfil],
+  imports: [Cuenta, Transacciones, Prestamos, Perfil, RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

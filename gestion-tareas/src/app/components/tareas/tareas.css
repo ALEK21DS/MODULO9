@@ -1,0 +1,16 @@
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 234, 234);
+    margin: 10px;
+    flex-direction:row;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 30px;
+  border-color: white;
+}

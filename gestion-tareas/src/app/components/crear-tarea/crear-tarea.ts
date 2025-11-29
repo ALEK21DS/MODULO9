@@ -15,7 +15,13 @@ export class CrearTarea {
 
   
   addTarea(){
-    
+    if(this.materia == '' || this.descripcion == ''){
+      alert('Completa todos los campos');
+    }else{
+      console.log("Se ha creado la tarea: - "+ this.materia + " - "+ this.descripcion)
+      this.materia = '';
+      this.descripcion = '';
+    }
   }
 
 }

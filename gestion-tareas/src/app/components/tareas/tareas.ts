@@ -13,7 +13,6 @@ export class Tareas {
 
   materiaRapida: string = '';
 
-
   tareas = [
     { id: 1, titulo: 'Matematicas', descripcion: 'Sumas', completada: true },
     { id: 2, titulo: 'Educacion Fisica', descripcion: 'Ejercicio de marcha', completada: false },

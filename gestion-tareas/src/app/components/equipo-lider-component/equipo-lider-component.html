@@ -1,0 +1,15 @@
+
+
+<h1>Equipo Lider</h1>
+<p>Soy el lider y mi nombre es {{contadorLider}} </p>
+
+{{cuentaRecibida}}
+
+<p>
+    Numero de cuentas: {{numeroCuentas}}
+</p>
+
+<app-miembro-equipo-component [contadorLiderComponent]="contadorLider"
+                                (aumentarContador)="recibirContador($event)"
+                                (CuentaM)="recibirCuentas($event)"
+></app-miembro-equipo-component>
